@@ -1,14 +1,18 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "d0939de7-a209-4c8a-aa4c-07879145d509")
 	(paper "A4")
 	(lib_symbols
 		(symbol "Device:Battery_Cell"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -91,7 +95,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0.762) (xy 0 0)
+						(xy 0 1.778) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -103,7 +107,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.778) (xy 0 2.54)
+						(xy 0 0.762) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -176,11 +180,16 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:LED"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016) hide)
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -248,10 +257,22 @@
 			(symbol "LED_0_1"
 				(polyline
 					(pts
-						(xy -1.27 -1.27) (xy -1.27 1.27)
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
 					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -272,7 +293,7 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27)
 					)
 					(stroke
 						(width 0.254)
@@ -284,22 +305,10 @@
 				)
 				(polyline
 					(pts
-						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
-					)
-					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -345,10 +354,13 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Switch:SW_DIP_x01"
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -500,6 +512,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+3V0"
 			(power)
@@ -577,7 +590,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -589,7 +602,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -603,7 +616,8 @@
 			(symbol "+3V0_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "+3V0"
 						(effects
 							(font
@@ -620,6 +634,7 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
@@ -699,7 +714,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
+					(length 0)
+					(hide yes)
 					(name "GND"
 						(effects
 							(font
@@ -716,12 +732,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:PWR_FLAG"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -812,19 +833,8 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
-	)
-	(junction
-		(at 139.7 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16c30366-c4bc-4b66-bd8d-e321aea73756")
-	)
-	(junction
-		(at 107.95 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "37e9fcc9-2c6b-4e16-958d-4c5a9b4deae7")
 	)
 	(junction
 		(at 139.7 72.39)
@@ -852,16 +862,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 93.98) (xy 139.7 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "00a98a24-b959-4662-baea-f4404e4766e5")
-	)
-	(wire
-		(pts
 			(xy 107.95 77.47) (xy 104.14 77.47)
 		)
 		(stroke
@@ -869,16 +869,6 @@
 			(type default)
 		)
 		(uuid "0cc85a90-28bd-4bdb-a59f-14cd0ee2b74e")
-	)
-	(wire
-		(pts
-			(xy 125.73 93.98) (xy 139.7 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6999d7b3-ea05-4d5e-96e8-4ef50c359096")
 	)
 	(wire
 		(pts
@@ -932,16 +922,6 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 93.98) (xy 107.95 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af8e72e5-4423-42a0-ad2c-273fc110dcbf")
-	)
-	(wire
-		(pts
 			(xy 139.7 72.39) (xy 139.7 77.47)
 		)
 		(stroke
@@ -949,16 +929,6 @@
 			(type default)
 		)
 		(uuid "b7ffa76b-efbf-4f28-9077-7b66a1620231")
-	)
-	(wire
-		(pts
-			(xy 118.11 93.98) (xy 107.95 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf806240-30c7-46a4-8192-e313185f9f39")
 	)
 	(wire
 		(pts
@@ -1762,7 +1732,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Binary_Kitchen:5mm_SMD-Pad"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 121.92 62.23 0)
 			(effects
 				(font
@@ -1829,7 +1799,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Binary_Kitchen:5mm_SMD-Pad"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 121.92 72.39 0)
 			(effects
 				(font
@@ -1896,7 +1866,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Binary_Kitchen:5mm_SMD-Pad"
+		(property "Footprint" "LED_THT:LED_D5.0mm_Clear"
 			(at 121.92 82.55 0)
 			(effects
 				(font
@@ -1933,73 +1903,6 @@
 			(project "unicorn"
 				(path "/d0939de7-a209-4c8a-aa4c-07879145d509"
 					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 121.92 93.98 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005ffe09e9")
-		(property "Reference" "D4"
-			(at 122.0978 99.4918 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 122.0978 97.1804 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Binary_Kitchen:5mm_SMD-Pad"
-			(at 121.92 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 121.92 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 121.92 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "853f9236-a15c-4516-a825-86721966ed18")
-		)
-		(pin "2"
-			(uuid "4cd4cb8f-f22d-42a8-864a-b89de5ddcdec")
-		)
-		(instances
-			(project "unicorn"
-				(path "/d0939de7-a209-4c8a-aa4c-07879145d509"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -2075,4 +1978,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
